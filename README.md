@@ -53,6 +53,10 @@ Each implementation provides a basic URL shortener that allows users to shorten 
     -   Local SQLite database for URL storage
     -   Simple in-memory caching for performance
 
+## Setup Instructions
+
+Each implementation has its own directory with a README file containing detailed setup instructions. To get started with a specific language, navigate to its folder and follow the instructions.
+
 ### General Prerequisites
 
 -   Install the necessary language runtime (Rust, Go, Python, Node.js, C++)
