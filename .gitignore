@@ -127,7 +127,7 @@ target/
 
 # Cargo
 Cargo.lock
-Cargo.toml
+.cargo/
 
 # Binaries for programs and plugins
 *.exe
