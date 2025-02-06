@@ -19,11 +19,11 @@ Each implementation provides a basic URL shortener that allows users to shorten 
 
 ### 2. Go
 
--   **Framework**: Fiber
--   **Storage**: PostgreSQL
+-   **Framework**: STD Library
+-   **Storage**: SQLite
 -   **Features**:
-    -   REST API with Fiber
-    -   Database integration with PostgreSQL
+    -   REST API with net/http
+    -   Database integration with SQLite
     -   Rate limiting for API endpoints
 
 ### 3. Python
@@ -37,7 +37,7 @@ Each implementation provides a basic URL shortener that allows users to shorten 
 
 ### 4. TypeScript (Node.js)
 
--   **Framework**: Express.js
+-   **Framework**: Bun
 -   **Storage**: MongoDB
 -   **Features**:
     -   REST API with Express.js
@@ -53,40 +53,7 @@ Each implementation provides a basic URL shortener that allows users to shorten 
     -   Local SQLite database for URL storage
     -   Simple in-memory caching for performance
 
-## Setup Instructions
-
-Each implementation has its own directory with a README file containing detailed setup instructions. To get started with a specific language, navigate to its folder and follow the instructions.
-
 ### General Prerequisites
 
 -   Install the necessary language runtime (Rust, Go, Python, Node.js, C++)
 -   Set up the required database (PostgreSQL, SQLite, Redis, MongoDB)
-
-### Example Setup (Rust Version)
-
-```sh
-cd rust-url-shortener
-cargo run
-```
-
-### Example API Usage
-
-#### Shorten a URL
-
-```sh
-curl -X POST "http://localhost:8000/shorten" -H "Content-Type: application/json" -d '{"url": "https://example.com"}'
-```
-
-#### Retrieve Original URL
-
-```sh
-curl -X GET "http://localhost:8000/{shortened_id}"
-```
-
-## Contributing
-
-Contributions are welcome! Feel free to submit pull requests with improvements or new implementations in other languages.
-
-## License
-
-This project is licensed under the MIT License.
