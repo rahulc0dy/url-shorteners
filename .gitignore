@@ -190,3 +190,6 @@ go.work.sum
 
 # Go modules
 go.sum
+
+# db files
+*.db

@@ -1,0 +1,17 @@
+{
+    "name": "ts-shortener",
+    "module": "index.ts",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "start": "bun run index.js",
+        "dev": "bun run --watch index.ts",
+        "db:init": ""
+    },
+    "devDependencies": {
+        "@types/bun": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    }
+}
